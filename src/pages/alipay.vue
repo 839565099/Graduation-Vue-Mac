@@ -25,7 +25,7 @@
     methods:{
       paySubmit(){
        var self=this
-        // axios.get('http://192.168.0.110:8081/pay?orderId='+this.orderId+'&amount=0.01&payType=ALIPAY_PC')
+        // axios.get('http://172.16.217.129:8081/pay?orderId='+this.orderId+'&amount=0.01&payType=ALIPAY_PC')
         axios.get('http://127.0.0.1:8081/pay?orderId='+this.orderId+'&amount=0.01&payType=ALIPAY_PC')
                 .then(function (response) {
                   self.content=response.body;

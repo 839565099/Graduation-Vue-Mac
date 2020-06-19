@@ -120,7 +120,7 @@ export default{
       if(payType == 1){
          window.open('/#/order/alipay?orderId='+this.orderId,'_blank');
       }else{
-        // axios.get('http://192.168.0.110:8081/pay?orderId='+this.orderId+'&amount=0.01&payType=WXPAY_NATIVE')
+        // axios.get('http://172.16.217.129:8081/pay?orderId='+this.orderId+'&amount=0.01&payType=WXPAY_NATIVE')
         axios.get('http://127.0.0.1:8081/pay?orderId='+this.orderId+'&amount=0.01&payType=WXPAY_NATIVE')
                 .then(function (response) {
                   //成功
